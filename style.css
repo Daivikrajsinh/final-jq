@@ -1,0 +1,123 @@
+@import url('https://font.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    color: yellowgreen;
+    color: black;
+    background: lightgray;
+}
+
+
+.dark-mode{
+    color: red;
+    color: aliceblue;
+    background: black;
+}
+.body{
+    font-family: "montserrat",sans-serif;
+    color: var(--secondary);
+}
+h1{
+    font-family: "Anton",sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+ul{
+    list-style: none;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0 15px;
+}
+.switch{
+    font-size: 24px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+/* nav  */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a:hover{
+    color: var(--primari);
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+
+    text-transform: capitalize;
+    padding: 15px 10px;
+
+}
+
+/* hero section */
+
+.hero-section{
+    background: var(--background);
+    display: flex;
+    height: 100vh;
+    padding: 50px 0;
+}
+
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hero-wrapper div{
+    flex: 1;
+}
+.hero-wrapper h1{
+    font-size: 80px;
+    color: var(--primari);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.hero-wrapper p{
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+.hero-wrapper .btn{
+    background: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.hero-wrapper .btn:hover{
+    background: transparent;
+    color: brown;
+    
+}

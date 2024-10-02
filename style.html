@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+
+</head>
+<body>
+    <!-- navigation -->
+     <nav>
+        <div class="nav-wrapper container">
+            <div class="logo"><a href="#">logo</a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Chef</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Reservation</a></li>
+                
+            </ul>
+            <div>
+                <ion-icon name="moon-outline" class="switch"></ion-icon>
+            </div>
+        </div>
+     </nav>
+     <!-- hero section -->
+     <section class="hero-section">
+        <div class="container hero-wrapper">
+            <div>
+                <h1>beef steak</h1>
+                <p>A beefsteak, often called just steak  A beefsteak, often called just steak A beefsteak, often called just steak A beefsteak, often called just steak A beefsteak, often called just steak A beefsteak, often called just steak A beefsteak, often called just steak A beefsteak, often called just steak</p>
+                <a href="#" class="btn">order now</a>
+            </div>
+            <div>
+                <img src="pexels-photo-4940719.jpeg" alt="" class="img" style="height: 700px; width: 500px; border-radius: 50%; margin-left: 200px;">
+            </div>
+        </div>
+     </section>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         $(".switch").click(function () {
+      $("body").toggleClass("dark-mode");
+      if($("body").hasClass("dark-mode")){
+        $("switch").attr("name","sunny-outline");
+      }else{
+        $("switch").attr("name","moon-outline");
+
+      }
+    })
+     </script>
+    
+</body>
+</html>

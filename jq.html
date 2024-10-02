@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fainal project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+
+
+    .port {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .container-main {
+      max-width: 100%;
+      padding: 0 0;
+      margin-left: 150px;
+      margin-top: 50px;
+    }
+
+    .chart-div {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #myChart1 {
+      height: 500px !important;
+    }
+
+    .learn {
+      width: 100%;
+      height: auto;
+      gap: 50px;
+    }
+
+    .learnleft {
+      width: auto;
+      height: 100%;
+
+    }
+
+    .learnright {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    .learnr {
+      width: 100%;
+      height: auto;
+      gap: 50px;
+    }
+
+    .learnrleft {
+      width: auto;
+      height: 100%;
+
+    }
+
+    .learnrright {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hdr-1">
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed bottom-0" style="height: 94vh; width: 15%;">
+
+      <div class="collapse navbar-collapse h-100  d-flex align-items-start" id="navbarSupportedContent ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column gap-4 ms-3">
+          <h2 style="color: white;"></h2>
+
+          <h6 style="color: white;">core</h6>
+          <li class="nav-item d-flex">
+            <i class="fa-solid fa-gauge" style="color: white;margin-top: 10px;"></i>
+            <a style="text-decoration: none; color: white;margin-top: 8px; margin-left: 6px;"
+              href="#Dashboard ">card</a>
+
+          </li>
+          <h6 style="color: #f4f4f4;">interface</h6>
+          <li class="nav-item d-flex">
+            <i class="fa-solid fa-film" style="color: white;margin-top: 10px;"></i>
+            <a class="nav-link text-white" href="#">Layouts</a>
+          </li>
+          <li class="nav-item d-flex">
+            <i class="fa-solid fa-table-columns" style="color: white;margin-top: 10px;"></i>
+            <a class="nav-link disabled text-white" aria-disabled="true">Pages</a>
+          </li>
+          <h6 style="color: #f4f4f4;">ADDONS</h6>
+          <li class="nav-item d-flex">
+            <i class="fa-solid fa-chart-gantt" style="color: white;margin-top: 10px;"></i>
+            <a style="text-decoration: none; color: white;margin-top: 8px; margin-left: 6px;" href="#chart"> Chart</a>
+          </li>
+          <li class="nav-item d-flex">
+            <i class="fa-solid fa-table" style="color: white;margin-top: 10px;"></i>
+            <a style="text-decoration: none; color: white;margin-top: 8px; margin-left: 6px;" href="#table">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" aria-disabled="true"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" aria-disabled="true"></a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed top-0 w-100 z-1">
+      <div class="container-fluid ">
+
+        <h2 style="color: #f4f4f4;">navbar</h2>
+        <button class="btn ms-5">
+          <i class="fa-solid fa-bars ms-3" style="color: white;"></i>
+        </button>
+
+        <a class="navbar-brand text-white" href="#"></a>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success bg-black" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-main">
+
+    <section>
+      <div class="container d-lg-flex d-md-flex d-sm-block p-5 justify-content-between gap-5">
+        <div class="card text-center bg-dark text-light d-flex mb-3" style="width: auto; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title mt-5">Special title treatment</h5>
+            <p class="card-text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem
+              possimus dolorum esse eligendi?</p>
+            <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+          </div>
+        </div>
+        <div class=" card text-center bg-secondary text-light mb-3" style="width:auto; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title mt-5">Special title treatment</h5>
+            <p class="card-text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem
+              possimus dolorum esse eligendi?</p>
+            <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+          </div>
+        </div>
+        <div class=" card text-center bg-dark text-light mb-3" style="width:auto; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title mt-5">Special title treatment</h5>
+            <p class="card-text mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas quidem
+              possimus dolorum esse eligendi?</p>
+            <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div id="chart" class="chart-div">
+      <div class="container d-flex justify-content-between my-5 p-5">
+        <div class="card pt-4 bg-warning" style="width: 600px; height: 550px;">
+          <div class="card-body">
+            <div class="box" style="width: 100%; height: 500px;">
+              <canvas id="myChart"></canvas>
+            </div>
+
+            <!-- jQuery CDN  -->
+
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+              integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+            <!-- Chart.js CDN  -->
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <!-- jQuery Script  -->
+
+            <script>
+              const ctx = document.getElementById("myChart");
+              // ctx.style.backgroundColor = 'brown'
+
+              new Chart(ctx, {
+                type: "polarArea",
+                data: {
+                  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                  datasets: [
+                    {
+                      label: "# of Votes",
+                      data: [12, 15, 3, 5, 2, 3],
+                      borderWidth: 0.5,
+                      backgroundColor: [
+                        "red",
+                        "blue",
+                        "yellow",
+                        "green",
+                        "purple",
+                        "orange",
+                      ],
+
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              });
+
+
+            </script>
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+
+          </div>
+        </div>
+        <div class="card " style="width: 600px; height: 550px;">
+          <div class="card-body bg-warning">
+            <!-- char 2  -->
+            <div class="box-2" style="width: 100%; ">
+              <canvas id="myChart1"></canvas>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              const ctxe = document.getElementById('myChart1');
+
+              new Chart(ctxe, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+
+
+
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </section>
+    <section>
+      <div class="container p-5" id="one">
+        <div class="learn d-lg-flex d-md-block d-sm-block mt-4 mb-4">
+          <div class="learnleft"><img class="w-100 h-100 object-fit-fill mt-4 mb-4" src="fundamentals.svg" alt=""></div>
+          <div class="learnright mt-4 mb-4">
+            <h2>Learn The Fundamentals</h2>
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique deleniti possimus magnam corporis
+              ratione facere!</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Cumque reiciendis eius autem eveniet
+              mollitia, <br> at asperiores suscipit quae similique laboriosam iste minus placeat odit velit quos, nulla
+              architecto amet voluptates?</p>
+            <button type="button" style="width: 150px;" class="btn btn-light">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container bg-primary ">
+        <nav class="navbar navbar bg-primary mt-0" data-bs-theme="dark" style="height: 130px;">
+
+          <a class="navbar-brand fs-3 ">Sign Up For Our Newsletter</a>
+          <form class="d-flex" role="search">
+            <input class=" form-control me-2 bg-white" style="width: 400px;" type="search" placeholder="Enter Email"
+              aria-label="Search">
+            <button class="btn btn-outline-success text-white bg-black" type="submit">submit</button>
+          </form>
+        </nav>
+      </div>
+
+    </section>
+
+
+    <section>
+      <div id="table" class="ctn">
+        <div class="container border border-1 bg-primary my-5 p-5">
+          <h2 style="display: flex;justify-content: center;color: #f4f4f4;">Data Tabel</h2>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">position</th>
+                <th scope="col">office</th>
+                <th scope="col">Age</th>
+                <th scope="col">Start date</th>
+                <th scope="col">salary</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">Tiger Nixon</th>
+                <td> System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td> $320,800</td>
+              </tr>
+              <tr>
+                <th scope="row">Garrett Winters</th>
+                <td>Accountant</td>
+                <td> Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td> $170,750</td>
+              </tr>
+              <tr>
+                <th scope="row">Ashton Cox</th>
+                <td>Junior Technical Author</td>
+                <td> San Francisco</td>
+                <td>66</td>
+                <td> 2009/01/12</td>
+                <td> $86,000</td>
+              </tr>
+              <tr>
+                <th scope="row">Cedric Kelly</th>
+                <td>Senior Javascript Developer</td>
+                <td> Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+              </tr>
+              <tr>
+                <th scope="row">Airi Satou</th>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td> 2008/11/28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <th scope="row">Brielle Williamson</th>
+                <td>Integration Specialist</td>
+                <td> New York</td>
+                <td>61</td>
+                <td> 2012/12/02</td>
+                <td> $372,000</td>
+              </tr>
+              <tr>
+                <th scope="row">Herrod Chandler</th>
+                <td> Sales Assistant</td>
+                <td> San Francisco</td>
+                <td>59</td>
+                <td> 2012/08/06</td>
+                <td> $137,500</td>
+              </tr>
+              <tr>
+                <th scope="row">Rhona Davidson</th>
+                <td> Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td> $327,900</td>
+              </tr>
+              <tr>
+                <th scope="row">Colleen Hurst</th>
+                <td> Javascript Developer</td>
+                <td> San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td> $205,500</td>
+              </tr>
+              <tr>
+                <th scope="row">Sonya Frost</th>
+                <td>Software Engineer</td>
+                <td> Edinburgh</td>
+                <td>23</td>
+                <td> 2008/12/13</td>
+                <td>$103,600</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container p-5">
+        <h2 class="mt-5 text-center">Contact Info</h2>
+        <h4>Main Location: 50 Main st Boston MA</h4>
+        <hr>
+        <h4>Enrollment Phone: (555) 555-5555</h4>
+        <hr>
+        <h4>Student Phone: (333) 333-3333</h4>
+        <hr>
+        <h4>Student Phone: (333) 333-3333</h4>
+        <hr>
+        <h4>Student Email: student@frontendbc.test</h4>
+
+      </div>
+    </section>
+    <section>
+      <div class="Contact d-flex" style="height: 80vh;">
+        <div class="container p-5">
+          <div class="col pt-5">
+            <h1>Contact</h1>
+            <div class="line"></div> <br>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+          <div class="cont d-flex justify-content-md-around">
+            <div class="card pt-4" style="width: 32rem; height: 500px;">
+              <div class="card-body">
+                <div class="info-item d-flex">
+                  <i class="fa-sharp fa-solid fa-location-dot fs-4 p-1"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>A108 Adam Street, IND ,NY535022</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="fa-solid fa-phone fs-4 p-1"></i>
+                  <div>
+                    <h3>Call Uss</h3>
+                    <p>9998713652</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="fa-solid fa-envelope fs-4 p-1"></i>
+                  <div>
+                    <h3>Email US</h3>
+                    <p>devikrajsinh05@gmail.com</p>
+                  </div>
+                </div>
+                <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                      href="https://www.gps.ie/">gps devices</a></iframe></div>
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+
+              </div>
+            </div>
+            <div class="card pt-4" style="width: 46rem; height: 500px;">
+              <div class="card-body">
+                <div class="name d-flex">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">your name</label> <br>
+                    <input type="text" name="name" id="name" class="form-controls" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">your Email</label> <br>
+                    <input type="text" name="Email" id="Email" class="form-controls" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">subject</label> <br>
+                  <input type="text" name="subject" id="subject" class="form-controls w-100" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                </div>
+                <div class="col-md-12 text-center pt-1">
+                  <button type="submit" fdprocessedid="rvbhze" class="btn bg-primary rounded-5">Send message</button>
+                </div>
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-4 bg-dark text-white text-center mt-5">
+    <div class="container">
+      <p class="lead">Copyright © 2021 Frontend Bootcamp</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $("button").click(function () {
+      $(".hdr-1").toggle(1000);
+    })
+  </script>
+</body>
+
+</html>
